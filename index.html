@@ -1,0 +1,298 @@
+﻿<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Max Verstappen Racing — Official Fan Site</title>
+    <style>
+      :root {
+        --bg: #f8f9fb;
+        --text: #222;
+        --muted: #5a5f6a;
+        --brand: #e10600; /* F1 red */
+        --ink: #111;
+        --card: #ffffff;
+        --border: #e3e7ef;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        color: var(--text);
+        background: var(--bg);
+        line-height: 1.5;
+      }
+      header {
+        background: #0c0d10;
+        color: #fff;
+        border-bottom: 4px solid var(--brand);
+      }
+      .header-inner {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 18px 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-weight: 800;
+        font-size: 1.3rem;
+        letter-spacing: 0.3px;
+      }
+      .logo-badge {
+        width: 36px;
+        height: 36px;
+        display: grid;
+        place-items: center;
+        background: var(--brand);
+        border-radius: 8px;
+        font-weight: 900;
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 12px;
+        border-radius: 6px;
+        font-weight: 600;
+      }
+      nav a:hover,
+      nav a:focus {
+        background: rgba(255,255,255,0.12);
+        outline: none;
+      }
+      main {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 24px 16px 56px;
+      }
+      .hero {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 24px;
+        align-items: start;
+      }
+      @media (max-width: 900px) {
+        .hero { grid-template-columns: 1fr; }
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 6px 14px rgba(17, 24, 39, 0.06);
+      }
+      h1, h2, h3 {
+        color: var(--ink);
+        margin: 0 0 10px;
+      }
+      p { color: var(--muted); margin: 0 0 14px; }
+      .btn {
+        display: inline-block;
+        background: var(--brand);
+        color: #fff;
+        padding: 10px 14px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 700;
+      }
+      .btn:hover { filter: brightness(0.95); }
+      .media {
+        display: grid;
+        place-items: center;
+        gap: 14px;
+      }
+      .media img, .media video {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        border: 1px solid var(--border);
+      }
+      .features {
+        margin-top: 32px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+      }
+      @media (max-width: 800px) {
+        .features { grid-template-columns: 1fr; }
+      }
+      .features ul {
+        margin: 0;
+        padding-left: 18px;
+      }
+      .shop {
+        margin-top: 32px;
+      }
+      .muted {
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+      footer {
+        background: #0c0d10;
+        color: #dfe3ea;
+        padding: 24px 16px;
+      }
+      .footer-inner {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: grid;
+        gap: 10px;
+      }
+      .aside {
+        position: relative;
+        padding-left: 16px;
+        border-left: 4px solid var(--brand);
+      }
+      /* Inline table borders are required by the exercise,
+         but we add a little spacing container-wise. */
+      .table-wrap { overflow-x: auto; margin-top: 12px; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-inner">
+        <div class="logo" aria-label="Site logo and name">
+          <span class="logo-badge" aria-hidden="true">MV</span>
+          Max Verstappen Racing
+        </div>
+        <nav aria-label="Primary">
+          <a href="#welcome">Welcome</a>
+          <a href="#services">Services</a>
+          <a href="#shop">Shop</a>
+          <a href="#about">About</a>
+          <a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="welcome" class="hero">
+        <article class="card">
+          <h1>Max Verstappen Racing</h1>
+          <p>
+            Welcome to the fan-built Max Verstappen Racing hub. Explore stats, race analysis,
+            official-style merchandise mockups, and tutorials that help you get the most out of Grand Prix weekends.
+          </p>
+          <p class="muted">
+            New here? Start with our quick video tutorial and check out the services we provide below.
+          </p>
+          <p>
+            Visit our code and project board:
+            <a class="btn" href="https://github.com/your-username" target="_blank" rel="noopener">My GitHub</a>
+          </p>
+
+          <aside class="aside" aria-label="Announcement">
+            <strong>Heads up:</strong> This is a learning project. Images and products are placeholders for educational purposes.
+          </aside>
+        </article>
+
+        <div class="media">
+          <!-- Real image of a related service/product -->
+          <img
+            src="https://images.pexels.com/photos/31331380/pexels-photo-31331380.jpeg"
+            alt="Red Bull Racing car on track — sample visual for our analysis service" />
+
+          <!-- Placeholder image with descriptive alt text -->
+          <img
+            src="https://via.placeholder.com/640x360?text=Product+Image+Coming+Soon"
+            alt="Placeholder for upcoming product photo — image coming soon" />
+        </div>
+      </section>
+
+      <section aria-labelledby="tutorial-heading" class="card" style="margin-top: 24px;">
+        <h2 id="tutorial-heading">Quick Start Tutorial</h2>
+        <p>
+          This short video shows how to navigate the site, find weekend schedules, read our compact race briefs,
+          and browse the merchandise table.
+        </p>
+        <!-- Exercise 4: HTML5 video, width 500px (container keeps it responsive; attribute ensures requirement) -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/bjFx_Jp6KeQ?si=Fz-wGRbI3YfRh-pQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </section>
+
+      <section id="services" class="features">
+        <article class="card">
+          <h2>Our Services</h2>
+          <ul>
+            <li>Live Race Weekend Schedules and Session Summaries</li>
+            <li>Driver and Constructor Stats Snapshots</li>
+            <li>Race Strategy and Tyre Degradation Analysis</li>
+            <li>Post-Race Reports and Highlights</li>
+            <li>Official-Style Merchandise Concepts and Previews</li>
+          </ul>
+        </article>
+
+        <aside class="card" aria-label="Side notes and links">
+          <h3>Helpful Links</h3>
+          <ul>
+            <li><a href="https://news.verstappen.com/en" target="_blank" rel="noopener">Official Verstappen News</a></li>
+            <li><a href="https://www.formula1.com/" target="_blank" rel="noopener">Formula 1</a></li>
+            <li><a href="#shop">Visit the Shop Section</a></li>
+          </ul>
+        </aside>
+      </section>
+
+      <section id="shop" class="shop card" aria-labelledby="shop-heading">
+        <h2 id="shop-heading">Product Showcase</h2>
+        <p class="muted">Concept products for demonstration purposes only.</p>
+        <div class="table-wrap">
+          <!-- Exercise 3: Table with caption and inline border styles -->
+          <table style="border:1px solid #cfd6e4;border-collapse:collapse;width:100%;background:#fff;">
+            <caption style="caption-side:top;padding:8px;font-weight:700;">
+              Max Verstappen Merch — Concept Line
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col" style="border:1px solid #cfd6e4;padding:10px;text-align:left;">Product</th>
+                <th scope="col" style="border:1px solid #cfd6e4;padding:10px;text-align:right;">Price</th>
+                <th scope="col" style="border:1px solid #cfd6e4;padding:10px;text-align:center;">Rating</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="border:1px solid #cfd6e4;padding:10px;">MV Racing T‑Shirt</td>
+                <td style="border:1px solid #cfd6e4;padding:10px;text-align:right;">KSH 8,000</td>
+                <td style="border:1px solid #cfd6e4;padding:10px;text-align:center;">★★★★☆</td>
+              </tr>
+              <tr>
+                <td style="border:1px solid #cfd6e4;padding:10px;">MV Team Cap</td>
+                <td style="border:1px solid #cfd6e4;padding:10px;text-align:right;">KSH 3,500</td>
+                <td style="border:1px solid #cfd6e4;padding:10px;text-align:center;">★★★☆☆</td>
+              </tr>
+              <tr>
+                <td style="border:1px solid #cfd6e4;padding:10px;">MV Hoodie</td>
+                <td style="border:1px solid #cfd6e4;padding:10px;text-align:right;">KSH 10,000</td>
+                <td style="border:1px solid #cfd6e4;padding:10px;text-align:center;">★★★★★</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="about" class="card" style="margin-top: 24px;">
+        <h2>About This Site</h2>
+        <article>
+          <p>
+            This personal profile project showcases semantic HTML, accessible media, navigation,
+            and structured data. It was built as an exercise to practice modern web foundation skills.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <div>
+          Contact: info@maxverstappen.com • GitHub: <a href="https://github.com/your-username" target="_blank" rel="noopener" style="color:#fff;">your-username</a>
+        </div>
+        <div>
+          &copy; 2025 Max Verstappen Racing. Educational fan project. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+  </html>
